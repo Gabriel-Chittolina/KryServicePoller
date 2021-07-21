@@ -1,5 +1,7 @@
 # KryServicePoller
 
+Project was developed using Vert.x 4 and React.
+
 I made a build task to create the database schema, so you can run the project using the following command:
 
 ```
