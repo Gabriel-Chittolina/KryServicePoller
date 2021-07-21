@@ -19,7 +19,7 @@ The project uses Gradle 5.2, which is included in the wrapper folder. If using a
 The error that happens with the wrong Gradle version is the following on Task :nodeSetup, "Could not find org.nodejs:node:10.15.3". So, if you find that it is not using the included wrapper, please run the project using the following command:
 
 ```
-gradlew wrapper --gradle-version 5.2 create-schema run
+./gradlew wrapper --gradle-version 5.2 create-schema run
 ```
 
 ## Usage
