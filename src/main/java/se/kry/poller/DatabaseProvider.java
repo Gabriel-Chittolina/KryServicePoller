@@ -14,10 +14,14 @@ public class DatabaseProvider {
 	private final MySQLPool client;
 
 	private static final String DB_NAME = "krydb";
+	private static final String DB_USER = "krydb";
+	private static final String DB_PASSWORD = "krydb";
+	private static final String DB_PORT = 3306;
+	private static final String DB_HOST = "localhost";	
 
 	public DatabaseProvider(Vertx vertx) {
-		client = MySQLPool.pool(vertx, new MySQLConnectOptions().setPort(3306).setHost("localhost").setDatabase(DB_NAME)
-				.setUser("root").setPassword("my-secret-pw"), new PoolOptions());
+		client = MySQLPool.pool(vertx, new MySQLConnectOptions().setPort(DB_PORT).setHost(DB_HOST).setDatabase(DB_NAME)
+				.setUser(DB_USER).setPassword(DB_PASSWORD), new PoolOptions());
 	}
 
 	public MySQLPool getClient() {
