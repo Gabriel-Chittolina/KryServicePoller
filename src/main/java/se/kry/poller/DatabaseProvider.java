@@ -16,7 +16,7 @@ public class DatabaseProvider {
 	private static final String DB_NAME = "krydb";
 	private static final String DB_USER = "krydb";
 	private static final String DB_PASSWORD = "krydb";
-	private static final String DB_PORT = 3306;
+	private static final int DB_PORT = 3306;
 	private static final String DB_HOST = "localhost";	
 
 	public DatabaseProvider(Vertx vertx) {
